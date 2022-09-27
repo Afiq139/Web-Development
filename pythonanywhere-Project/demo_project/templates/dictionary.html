@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+
+    <link rel="stylesheet" href="{% static 'css/dictionary.css' %}">
+</head>
+<body>
+    <h1> Hi this is afiq's dictionary!</h1>
+    <form action="{% url 'home' %}" method = "post">
+        {% csrf_token %}  
+        {{ form }}
+        <input type="submit" value = "submit">
+    </form>
+
+
+    <ul>
+        {% for word in words %}
+            <li>{{word.word}} : {{word.meaning}}</li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+</html>
