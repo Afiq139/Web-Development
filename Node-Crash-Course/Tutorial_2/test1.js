@@ -14,3 +14,4 @@ greet('yoshi');
 console.log('----------------------------');
 console.log('The Global Object --- 2.09');
 console.log('----------------------------');
+
