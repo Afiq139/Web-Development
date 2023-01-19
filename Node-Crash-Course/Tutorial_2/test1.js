@@ -54,3 +54,11 @@ console.log(os.platform(), os.homedir());  //finding out info of os and dir
 console.log('----------------------------');
 console.log('The File System --- 18.50');
 console.log('----------------------------');
+
+//reading files
+
+//writing files
+
+//directories
+
+//deleting files
