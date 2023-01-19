@@ -24,7 +24,14 @@ console.log('----------------------------');
 
 setTimeout(() => {
     console.log('In The timeout');
-}, 3000);
+    clearInterval(int);
+}, 3000); //3s
 
+const int = setInterval(() => {
+    console.log('in the interval');
+}, 1000); //1s
 
+console.log('');
 
+console.log(__dirname); // directory file
+console.log(__filename); // name file
