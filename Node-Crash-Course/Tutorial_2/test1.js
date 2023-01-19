@@ -39,3 +39,6 @@ console.log(__filename); // name file
 console.log('----------------------------');
 console.log('Modules & Require --- 9.23');
 console.log('----------------------------');
+
+const xyz = require('./people'); //receive from people.js
+console.log(xyz);
