@@ -56,7 +56,16 @@ console.log('The File System --- 18.50');
 console.log('----------------------------');
 
 //stopped at 20.24
+
+const fs = require('fs'); //fs = file system
+
 //reading files
+fs.readFile('./docs/blog1.txt', (err, data) => {
+    if(err){
+        console.log(err);
+    }
+    console.log(data.toString());
+});
 
 //writing files
 
