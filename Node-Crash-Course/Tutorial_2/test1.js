@@ -60,6 +60,8 @@ console.log('----------------------------');
 const fs = require('fs'); //fs = file system
 
 //reading files
+
+//asynchronous - take sometimes
 fs.readFile('./docs/blog1.txt', (err, data) => {
     if(err){
         console.log(err);
