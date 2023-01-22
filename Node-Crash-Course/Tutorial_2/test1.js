@@ -77,6 +77,10 @@ fs.writeFile('./docs/blog1.txt', 'Hello, Shafiq', () => {
     console.log('file was written');
 });
 
+fs.writeFile('./docs/blog2.txt', 'Hello, Shafiq', () => {
+    console.log('file was written'); //will create new file
+});
+
 //directories
 
 //deleting files
