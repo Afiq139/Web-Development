@@ -70,7 +70,7 @@ fs.readFile('./docs/blog1.txt', (err, data) => {
     console.log(data.toString()); // turn buffer into string to read the file
 });
 
-console.log('last line');
+console.log('last line'); //wiil read this first, then buffer
 
 //writing files
 
