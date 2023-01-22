@@ -90,6 +90,13 @@ fs.mkdir('./assets', (err) => {
     console.log('Folder created'); //making new folder
 
 });
+} else {
+    fs.rmdir('./assets', (err) => { //remove file or directory
+        if(err){
+            console.log(err);
+        }
+        console.log('Folder deleted');
+    })
 }
 
 //deleting files
