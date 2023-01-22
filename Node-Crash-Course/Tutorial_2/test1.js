@@ -61,13 +61,16 @@ const fs = require('fs'); //fs = file system
 
 //reading files
 
-//asynchronous - take sometimes
+//asynchronous - take sometimes to do
 fs.readFile('./docs/blog1.txt', (err, data) => {
     if(err){
         console.log(err);
     }
-    console.log(data.toString());
+    //console.log(data); output will be buffer(package of data the were sent)
+    console.log(data.toString()); // turn buffer into string to read the file
 });
+
+console.log('last line');
 
 //writing files
 
