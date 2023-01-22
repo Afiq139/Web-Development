@@ -81,6 +81,13 @@ fs.writeFile('./docs/blog2.txt', 'Hello, Shafiq', () => {
     console.log('file was written'); //will create new file
 });
 
-//directories
+//directories (asynchronous)
+fs.mkdir('./assets', (err) => {
+    if (err) {
+        console.log(err);
+    }
+    console.log('Folder created'); //making new folder
+
+});
 
 //deleting files
