@@ -73,6 +73,9 @@ fs.readFile('./docs/blog1.txt', (err, data) => {
 console.log('last line'); //wiil read this first, then buffer
 
 //writing files
+fs.writeFile('./docs/blog1.txt', 'Hello, Shafiq', () => {
+    console.log('file was written');
+});
 
 //directories
 
