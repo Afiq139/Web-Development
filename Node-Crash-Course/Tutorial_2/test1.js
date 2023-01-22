@@ -82,6 +82,7 @@ fs.writeFile('./docs/blog2.txt', 'Hello, Shafiq', () => {
 });
 
 //directories (asynchronous)
+if(!fs.existsSync('./assets')){  //if file not exist, create new one
 fs.mkdir('./assets', (err) => {
     if (err) {
         console.log(err);
@@ -89,5 +90,6 @@ fs.mkdir('./assets', (err) => {
     console.log('Folder created'); //making new folder
 
 });
+}
 
 //deleting files
