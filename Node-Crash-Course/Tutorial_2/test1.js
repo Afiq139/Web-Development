@@ -112,3 +112,4 @@ if(fs.existsSync('./docs/deleteme.txt')){
 console.log('----------------------------');
 console.log('Streams & Buffers --- 31.51');
 console.log('----------------------------');
+//start using data, before it has finished loading
