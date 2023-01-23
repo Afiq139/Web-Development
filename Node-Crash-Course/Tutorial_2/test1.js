@@ -59,7 +59,7 @@ console.log('----------------------------');
 
 const fs = require('fs'); //fs = file system
 
-//reading files
+//----------------reading files----------------
 
 //asynchronous - take sometimes to do
 fs.readFile('./docs/blog1.txt', (err, data) => {
@@ -72,7 +72,7 @@ fs.readFile('./docs/blog1.txt', (err, data) => {
 
 console.log('last line'); //wiil read this first, then buffer
 
-//writing files
+//----------------writing files------------------
 fs.writeFile('./docs/blog1.txt', 'Hello, Shafiq', () => {
     console.log('file was written');
 });
@@ -81,7 +81,7 @@ fs.writeFile('./docs/blog2.txt', 'Hello, Shafiq', () => {
     console.log('file was written'); //will create new file
 });
 
-//directories (asynchronous)
+//----------------directories (asynchronous)----------------
 if(!fs.existsSync('./assets')){  //if file not exist, create new one
 fs.mkdir('./assets', (err) => {
     if (err) {
@@ -99,4 +99,4 @@ fs.mkdir('./assets', (err) => {
     })
 }
 
-//deleting files
+//----------------deleting files----------------
