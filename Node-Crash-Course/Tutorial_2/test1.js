@@ -156,6 +156,6 @@ console.log('----------------------------');
 // readStream.on('data', (chunk) => {
 //     console.log('-------NEW CHUNK -------');
 //     console.log(chunk);
-//     writeStream(('\nNEW CHUNK\n'))
+//     writeStream.write('\nNEW CHUNK\n');
 //     writeStream.write(chunk);
 // });
