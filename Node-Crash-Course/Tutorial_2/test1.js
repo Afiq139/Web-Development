@@ -156,6 +156,19 @@ console.log('----------------------------');
 // readStream.on('data', (chunk) => {
 //     console.log('-------NEW CHUNK -------');
 //     console.log(chunk);
-//     writeStream.write('\nNEW CHUNK\n');
+//     writeStream.write('\nNEW CHUNK\n');  //passing the new chunk
 //     writeStream.write(chunk);
 // });
+
+//or
+
+//const fs = require('fs'); //fs = file system
+
+//const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'}); 
+//const writeStream = fs.createWriteStream('./docs/blog4.txt'); 
+
+//for piping -- much shorter
+
+//readStream.pipe(writeStream);
+
+//others duplexStream
