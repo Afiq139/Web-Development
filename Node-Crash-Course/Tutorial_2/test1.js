@@ -113,3 +113,49 @@ console.log('----------------------------');
 console.log('Streams & Buffers --- 31.51');
 console.log('----------------------------');
 //start using data, before it has finished loading
+
+
+//const fs = require('fs'); //fs = file system
+
+// const readStream = fs.createReadStream('./docs/blog3.txt');
+
+// readStream.on('data', (chunk) => {
+//     console.log('-------NEW CHUNK -------');
+//     console.log(chunk);
+// });
+
+//or
+
+//const fs = require('fs'); //fs = file system
+
+// const readStream = fs.createReadStream('./docs/blog3.txt');
+
+// readStream.on('data', (chunk) => {
+//     console.log('-------NEW CHUNK -------');
+//     console.log(chunk.toString());
+// });
+
+//or
+
+//const fs = require('fs'); //fs = file system
+
+// const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'});  //readable format
+
+// readStream.on('data', (chunk) => {
+//     console.log('-------NEW CHUNK -------');
+//     console.log(chunk);
+// });
+
+//or
+
+//const fs = require('fs'); //fs = file system
+
+// const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'}); 
+//const writeStream = fs.createWriteStream('./docs/blog4.txt'); 
+
+// readStream.on('data', (chunk) => {
+//     console.log('-------NEW CHUNK -------');
+//     console.log(chunk);
+//     writeStream(('\nNEW CHUNK\n'))
+//     writeStream.write(chunk);
+// });
