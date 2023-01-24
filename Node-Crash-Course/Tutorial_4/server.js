@@ -150,6 +150,55 @@
 //400 Range - Bad request codes / user or client error codes
 //500 Range - Server error codes
 
+// const http = require('http'); 
+// const fs = require('fs');
+// const path = require('path');
+
+// const server = http.createServer((req, res) => {
+//     console.log(req.url, req.method); //running in server (backend), not in browser
+
+//     //set header content type
+//     //res.setHeader('Content-Type', 'text/plain');
+//     res.setHeader('Content-Type', 'text/html');
+
+//     let path = './views/';
+//     switch(req.url) {
+//         case '/':
+//             path += 'index.html';
+//             res.statusCode = 200; //can check on inspect -> Network -> Status
+//             break;
+//         case '/about':
+//             path += 'about.html';
+//             res.statusCode = 200;
+//             break;
+//         default:
+//             path += '404.html';
+//             res.statusCode = 404;
+//             break;
+//         }
+
+//     //send an html file
+//     fs.readFile(path, (err, data) => {
+//         if (err) {
+//             console.log(err);
+//             res.end();
+//         }else{
+//             //res.write(data); //for multiple things
+//             res.end(data);
+//         }
+//     })
+    
+// }); 
+
+// server.listen(3000, 'localhost', () => {
+//     console.log('listening for request on port 3000');
+// });
+
+//---------------------------------------------------------------
+//Redirects --- 22.16
+//---------------------------------------------------------------
+
+
 const http = require('http'); 
 const fs = require('fs');
 const path = require('path');
@@ -170,6 +219,11 @@ const server = http.createServer((req, res) => {
         case '/about':
             path += 'about.html';
             res.statusCode = 200;
+            break;
+        case '/about-me':
+            res.statusCode = 301; //moved
+            res.setHeader('Location', '/about'); //redirect to /about
+            res.end();
             break;
         default:
             path += '404.html';
@@ -193,7 +247,3 @@ const server = http.createServer((req, res) => {
 server.listen(3000, 'localhost', () => {
     console.log('listening for request on port 3000');
 });
-
-//---------------------------------------------------------------
-//Redirects --- 22.16
-//---------------------------------------------------------------
