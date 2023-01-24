@@ -51,6 +51,7 @@
 //Returning HTML Pages --- 9.07
 //---------------------------------------------------------------
 const http = require('http'); 
+const fs = require('fs');
 
 const server = http.createServer((req, res) => {
     console.log(req.url, req.method); //running in server (backend), not in browser
@@ -58,12 +59,23 @@ const server = http.createServer((req, res) => {
     //set header content type
     //res.setHeader('Content-Type', 'text/plain');
     res.setHeader('Content-Type', 'text/html');
+
+    //send an html file
+    fs.readFile('./views/index.html', (err, data) => {
+        if (err) {
+            console.log(err);
+            res.end();
+        }else{
+            //res.write(data); //for multiple things
+            res.end(data);
+        }
+    })
     
 
-    res.write('<head><link rel="stylesheet" href="#"></head>');
-    res.write('<p> Hello shafiq</p>');
-    res.write('<p> How are you </p>');
-    res.end();
+    // res.write('<head><link rel="stylesheet" href="#"></head>');
+    // res.write('<p> Hello shafiq</p>');
+    // res.write('<p> How are you </p>');
+    // res.end();
 }); 
 
 server.listen(3000, 'localhost', () => {
