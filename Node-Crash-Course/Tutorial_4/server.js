@@ -110,7 +110,7 @@ const server = http.createServer((req, res) => {
             path += '404.html';
             break;
         }
-        
+
     //send an html file
     fs.readFile(path, (err, data) => {
         if (err) {
@@ -132,3 +132,7 @@ const server = http.createServer((req, res) => {
 server.listen(3000, 'localhost', () => {
     console.log('listening for request on port 3000');
 });
+
+//---------------------------------------------------------------
+//Status Codes --- 18.42
+//---------------------------------------------------------------
