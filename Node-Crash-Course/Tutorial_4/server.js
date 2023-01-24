@@ -87,6 +87,69 @@
 //Basic Routing --- 12.59
 //---------------------------------------------------------------
 
+// const http = require('http'); 
+// const fs = require('fs');
+// const path = require('path');
+
+// const server = http.createServer((req, res) => {
+//     console.log(req.url, req.method); //running in server (backend), not in browser
+
+//     //set header content type
+//     //res.setHeader('Content-Type', 'text/plain');
+//     res.setHeader('Content-Type', 'text/html');
+
+//     let path = './views/';
+//     switch(req.url) {
+//         case '/':
+//             path += 'index.html';
+//             break;
+//         case '/about':
+//             path += 'about.html';
+//             break;
+//         default:
+//             path += '404.html';
+//             break;
+//         }
+
+//     //send an html file
+//     fs.readFile(path, (err, data) => {
+//         if (err) {
+//             console.log(err);
+//             res.end();
+//         }else{
+//             //res.write(data); //for multiple things
+//             res.end(data);
+//         }
+//     })
+    
+
+//     // res.write('<head><link rel="stylesheet" href="#"></head>');
+//     // res.write('<p> Hello shafiq</p>');
+//     // res.write('<p> How are you </p>');
+//     // res.end();
+// }); 
+
+// server.listen(3000, 'localhost', () => {
+//     console.log('listening for request on port 3000');
+// });
+
+//---------------------------------------------------------------
+//Status Codes --- 18.42
+//---------------------------------------------------------------
+
+//status codes - describe the type of response sent to the browser
+
+//200 - OK
+//301 - Resource moved
+//404 - Not found
+//500 - Internal Server Error
+
+//100 Range - Informational response
+//200 Range - Success codes
+//300 Range - Redirection codes/ codes for redirects
+//400 Range - Bad request codes / user or client error codes
+//500 Range - Server error codes
+
 const http = require('http'); 
 const fs = require('fs');
 const path = require('path');
@@ -102,12 +165,15 @@ const server = http.createServer((req, res) => {
     switch(req.url) {
         case '/':
             path += 'index.html';
+            res.statusCode = 200; //can check on inspect -> Network -> Status
             break;
         case '/about':
             path += 'about.html';
+            res.statusCode = 200;
             break;
         default:
             path += '404.html';
+            res.statusCode = 404;
             break;
         }
 
@@ -122,17 +188,9 @@ const server = http.createServer((req, res) => {
         }
     })
     
-
-    // res.write('<head><link rel="stylesheet" href="#"></head>');
-    // res.write('<p> Hello shafiq</p>');
-    // res.write('<p> How are you </p>');
-    // res.end();
 }); 
 
 server.listen(3000, 'localhost', () => {
     console.log('listening for request on port 3000');
 });
 
-//---------------------------------------------------------------
-//Status Codes --- 18.42
-//---------------------------------------------------------------
