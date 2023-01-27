@@ -16,9 +16,21 @@
 const http = require('http'); 
 const fs = require('fs');
 const path = require('path');
+const _ = require('lodash');
 
 const server = http.createServer((req, res) => {
-    console.log(req.url, req.method); //running in server (backend), not in browser
+
+    //lodash
+    const num = _.random(0,20);
+    console.log(num);
+
+    const greet = () => {
+        console.log('hello');
+    }
+
+
+
+    //console.log(req.url, req.method); //running in server (backend), not in browser
 
     //set header content type
     //res.setHeader('Content-Type', 'text/plain');
