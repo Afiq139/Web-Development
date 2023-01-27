@@ -24,9 +24,12 @@ const server = http.createServer((req, res) => {
     const num = _.random(0,20);
     console.log(num);
 
-    const greet = () => {
+    const greet = _.once(() => {
         console.log('hello');
-    }
+    })
+
+    greet();
+    //greet(); --> not allowing run twice
 
 
 
@@ -87,3 +90,10 @@ server.listen(3000, 'localhost', () => {
 //npm install lodash
 //npm i --save lodash ---no need to do it as already done by node js
 //lodash libary --> can use _.methodname(attributes)
+
+//---------------------------------------------------------------
+//Dependencies--- 13.26
+//---------------------------------------------------------------
+//exclude node_modules folder for sending projects
+//look on package.json for dependencies
+//just use npm install, it'll look on package.json for dependencies installation
