@@ -71,3 +71,7 @@ server.listen(3000, 'localhost', () => {
 //---------------------------------------------------------------
 //Installing Packages Locally--- 7.03
 //---------------------------------------------------------------
+//npm i -g npm  ---installing lodash
+//npm install lodash
+//npm i --save lodash ---no need to do it as already done by node js
+//lodash libary --> can use _.methodname(attributes)
