@@ -98,6 +98,3 @@ server.listen(3000, 'localhost', () => {
 //look on package.json for dependencies
 //just use npm install, it'll look on package.json for dependencies installation
 
-//---------------------------------------------------------------
-//Creating an Express App--- 2.27
-//---------------------------------------------------------------
