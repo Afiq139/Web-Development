@@ -60,3 +60,7 @@ app.use((req, res) => {
 //npm install -g nodemon
 //set-executionpolicy remotesigned -Scope CurrentUser
 //set-executionpolicy restricted -Scope CurrentUser
+
+//---------------------------------------------------------------
+//Passing Data into Views--- 11.00
+//---------------------------------------------------------------
