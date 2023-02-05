@@ -1,3 +1,5 @@
+//stop at 8.44
+
 const ctx = document.getElementById('myChart');
       
 new Chart(ctx, {
