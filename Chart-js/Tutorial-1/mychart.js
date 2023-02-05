@@ -1,7 +1,7 @@
 const ctx = document.getElementById('myChart');
       
 new Chart(ctx, {
-  type: 'bar',
+  type: 'line', //line, bar, radar, doughnut & Pie, polar Area, Bubble, Scatter, Area, Mixed and so on
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
