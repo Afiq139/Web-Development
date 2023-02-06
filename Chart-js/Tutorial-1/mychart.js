@@ -1,6 +1,6 @@
 //stop at 8.44
 
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('myChart').getContext('2d');
       
 new Chart(ctx, {
   type: 'line', //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
