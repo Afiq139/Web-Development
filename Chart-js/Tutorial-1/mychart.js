@@ -1,8 +1,10 @@
 //stop at 8.44
 
-const ctx = document.getElementById('myChart').getContext('2d');
+
+var beginnerchart = document.getElementById('beginnerchart').getContext('2d');
+// var ctx = document.getElementById('beginnerchart').getContext('2d');
       
-new Chart(ctx, {
+var chart = new Chart(beginnerchart, {
   type: 'line', //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
