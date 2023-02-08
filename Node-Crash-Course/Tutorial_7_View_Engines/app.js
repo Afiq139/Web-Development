@@ -17,7 +17,15 @@ app.listen(3000);
 app.get('/', (req, res) => {
     //res.send('<p> Home Page </p>');  //susbstitute the res.write and res.end()
     //res.sendFile('./views/index.html', {root:__dirname});
-    res.render('index', { title: 'Home' }); //will look on index.ejs & access the title
+    const blogs = [ //array
+          {title: 'Yoshi finds eggs', snippet: ' Lorem ipsum dolor sit amet consectetur'},
+          {title: 'Yoshi finds eggs', snippet: ' Lorem ipsum dolor sit amet consectetur'},
+          {title: 'Yoshi finds eggs', snippet: ' Lorem ipsum dolor sit amet consectetur'},
+        ];
+  
+    
+    res.render('index', { title: 'Home' , blogs }); 
+    //will look on index.ejs & access the title & blogs of arrays (blogs: blogs or blogs)
   })
 
 
@@ -65,4 +73,7 @@ app.use((req, res) => {
 //Passing Data into Views--- 11.00
 //---------------------------------------------------------------
 
-//stopped at 13.18
+//stopped at 23.13
+
+//EJS templates:
+//are processed through the EJS view engine on the server

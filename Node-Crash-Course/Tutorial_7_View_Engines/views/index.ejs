@@ -16,6 +16,7 @@
             <p><%= name %></p>
             <a href="/"><h1>Blog Afiq</h1></a>
             <p>Afiq Site</p>
+           
         </div>
         <ul>
             <li><a href="/">Blogs</a></li>
@@ -26,6 +27,17 @@
     
     <div class="blogs content">
         <h2>All Blogs</h2>
+
+        <% if (blogs.length > 0) { %> <!--checking if blogs of length is equal to 0 or more-->
+            <% blogs.forEach(blog => {%><!--cycling through the blogs -->
+
+                <h3 class ="title"><%= blog.title %></h3>
+                <p class ="snippet"><%= blog.snippet %></p>
+
+            <% })%>
+            <% } else {%>
+                <p>There are no blogs to do display...</p>
+        <% } %>
     </div>
 </body>
 </html>
