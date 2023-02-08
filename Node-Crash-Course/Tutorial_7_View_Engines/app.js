@@ -73,8 +73,6 @@ app.use((req, res) => {
 //Passing Data into Views--- 11.00
 //---------------------------------------------------------------
 
-//stopped at 23.13
-
 //EJS templates:
 //are processed through the EJS view engine on the server
 //server-side rendering 
@@ -82,3 +80,5 @@ app.use((req, res) => {
 //---------------------------------------------------------------
 //partials--- 23.59
 //---------------------------------------------------------------
+
+//stopped at 25.11
