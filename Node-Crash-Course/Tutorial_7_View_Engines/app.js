@@ -77,3 +77,8 @@ app.use((req, res) => {
 
 //EJS templates:
 //are processed through the EJS view engine on the server
+//server-side rendering 
+
+//---------------------------------------------------------------
+//partials--- 23.59
+//---------------------------------------------------------------
