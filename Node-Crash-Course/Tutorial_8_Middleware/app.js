@@ -86,3 +86,18 @@ app.use((req, res) => {
 //---------------------------------------------------------------
 //Adding CSS--- 30.18
 //---------------------------------------------------------------
+
+//---------------------------------------------------------------
+//Middleware-- 0.00 (no.8)
+//---------------------------------------------------------------
+// code which runs (on the server) between getting a request and sending a response. 
+// request -->inside server[ app.use(func), app.get('/',func) ]--> response
+// app.use(func) = runs every routes, including post request
+// app.get('/', func) = runs on certain routes
+//runs from top to bottom
+//
+//----- Middleware examples---
+// 1.) logger middleware to log details of every request
+// 2.) Authentication check middleware for protected routes
+// 3.) Middleware to parse JSON data from requests
+// 4.) Return 404 pages
