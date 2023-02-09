@@ -23,11 +23,11 @@ app.use((req, res, next) => {
 }); //it will continue reload the page and not moving downwards
 //use next()
 
-app.use((req, res, next) => {
-  console.log('in the next middleware');
-  next(); //look for next middleware
-}); //it will continue reload the page and not moving downwards
-//use next()
+// app.use((req, res, next) => {
+//   console.log('in the next middleware');
+//   next(); //look for next middleware
+// }); //it will continue reload the page and not moving downwards
+// //use next()
 
 
 app.get('/', (req, res) => {
@@ -42,7 +42,16 @@ app.get('/', (req, res) => {
     
     res.render('index', { title: 'Home' , blogs }); 
     //will look on index.ejs & access the title & blogs of arrays (blogs: blogs or blogs)
-  })
+  });
+
+  app.use((req, res, next) => {
+    console.log('in the next middleware');
+    next(); //look for next middleware
+  }); //it will continue reload the page and not moving downwards
+  //use next()
+
+  // will never reach above middleware because above middleware already executed
+
 
 
 //---------------------------------------------------------------
@@ -120,4 +129,8 @@ app.use((req, res) => {
 
 //---------------------------------------------------------------
 //using next()-- 5.39 (no.8)
+//---------------------------------------------------------------
+
+//---------------------------------------------------------------
+//3rd-party Middleware-- 8.21 (no.8)
 //---------------------------------------------------------------
