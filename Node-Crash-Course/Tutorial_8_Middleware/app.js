@@ -14,12 +14,21 @@ app.set('view engine', 'ejs');
 //listen for request
 app.listen(3000);
 
-app.use((req, res) => {
+app.use((req, res, next) => {
   console.log('new request made:');
   console.log('host: ', req.hostname);
   console.log('path: ', req.path);
   console.log('method: ', req.method);
-}); 
+  next(); //look for next middleware
+}); //it will continue reload the page and not moving downwards
+//use next()
+
+app.use((req, res, next) => {
+  console.log('in the next middleware');
+  next(); //look for next middleware
+}); //it will continue reload the page and not moving downwards
+//use next()
+
 
 app.get('/', (req, res) => {
     //res.send('<p> Home Page </p>');  //susbstitute the res.write and res.end()
@@ -108,3 +117,7 @@ app.use((req, res) => {
 // 2.) Authentication check middleware for protected routes
 // 3.) Middleware to parse JSON data from requests
 // 4.) Return 404 pages
+
+//---------------------------------------------------------------
+//using next()-- 5.39 (no.8)
+//---------------------------------------------------------------
