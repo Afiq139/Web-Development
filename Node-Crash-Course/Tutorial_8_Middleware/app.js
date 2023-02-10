@@ -16,6 +16,8 @@ app.set('view engine', 'ejs');
 //listen for request
 app.listen(3000);
 
+//middleware and static files
+app.use(express.static('public'));
 app.use(morgan('dev')); // or tiny   
 
 // app.use((req, res, next) => {
@@ -145,3 +147,4 @@ app.use((req, res) => {
 //---------------------------------------------------------------
 //static files-- 11.34 (no.8)
 //---------------------------------------------------------------
+// adding images file, css file
