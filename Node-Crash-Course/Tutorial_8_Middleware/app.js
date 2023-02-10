@@ -3,6 +3,8 @@
 //---------------------------------------------------------------
 
 const express = require('express');
+const morgan = require('morgan');
+
 
 //express app
 const app = express();
@@ -14,13 +16,16 @@ app.set('view engine', 'ejs');
 //listen for request
 app.listen(3000);
 
-app.use((req, res, next) => {
-  console.log('new request made:');
-  console.log('host: ', req.hostname);
-  console.log('path: ', req.path);
-  console.log('method: ', req.method);
-  next(); //look for next middleware
-}); //it will continue reload the page and not moving downwards
+app.use(morgan('dev')); // or tiny   
+
+// app.use((req, res, next) => {
+//   console.log('new request made:');
+//   console.log('host: ', req.hostname);
+//   console.log('path: ', req.path);
+//   console.log('method: ', req.method);
+//   next(); //look for next middleware
+// }); 
+//it will continue reload the page and not moving downwards
 //use next()
 
 // app.use((req, res, next) => {
