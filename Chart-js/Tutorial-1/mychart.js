@@ -5,7 +5,13 @@ var beginnerchart = document.getElementById('beginnerchart').getContext('2d');
 // var ctx = document.getElementById('beginnerchart').getContext('2d');
       
 var chart = new Chart(beginnerchart, {
-  type: 'line', //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
+
+  // The type of chart we want to create
+  type: 'line', 
+  //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
+
+
+  //the data for our dataset
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
