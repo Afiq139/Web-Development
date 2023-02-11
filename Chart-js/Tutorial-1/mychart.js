@@ -34,10 +34,19 @@ const chart = new Chart(beginnerchart, {
 });
 
 //to extract data
+
 // canvas > id="beginnerchart" > data > dataset[0] >label
 // chart > data > dataset[0] >label
 
+//borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black']
+//borderColor: ['0', '1', '2', '3', '4', '5', '6']
+
 const abc = chart.data.datasets[0].label;
 const borderSize = chart.data.datasets[0].borderWidth;
+const bordercolors = chart.data.datasets[0].borderColor;
+const bordergreen = chart.data.datasets[0].borderColor[3];
+
 console.log(abc);
 console.log(borderSize);
+console.log(bordercolors);
+console.log(bordergreen);
