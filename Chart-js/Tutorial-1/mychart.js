@@ -30,3 +30,10 @@ var chart = new Chart(beginnerchart, {
     }
   }
 });
+
+//to extract data
+// canvas > id="beginnerchart" > data > dataset[0] >label
+// chart > data > dataset[0] >label
+
+var abc = chart.data.datasets[0].label;
+console.log(abc);
