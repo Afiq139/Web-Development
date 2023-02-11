@@ -1,10 +1,10 @@
 //stop at 27.08
 
 
-var beginnerchart = document.getElementById('beginnerchart').getContext('2d');
+const beginnerchart = document.getElementById('beginnerchart').getContext('2d');
 // var ctx = document.getElementById('beginnerchart').getContext('2d');
       
-var chart = new Chart(beginnerchart, {
+const chart = new Chart(beginnerchart, {
 
   // The type of chart we want to create
   type: 'bar', 
@@ -37,7 +37,7 @@ var chart = new Chart(beginnerchart, {
 // canvas > id="beginnerchart" > data > dataset[0] >label
 // chart > data > dataset[0] >label
 
-var abc = chart.data.datasets[0].label;
+const abc = chart.data.datasets[0].label;
 const borderSize = chart.data.datasets[0].borderWidth;
 console.log(abc);
 console.log(borderSize);
