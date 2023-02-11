@@ -15,7 +15,7 @@ var chart = new Chart(beginnerchart, {
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Black'],
     datasets: [{
-      label: '# of Votes',
+      label: 'My First Data',
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
       borderColor: 'rgba(255, 99, 132)',
       data: [12, 19, 3, 5, 2, 3, 10],
