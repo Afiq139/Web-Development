@@ -1,4 +1,4 @@
-//stop at 18.28
+//stop at 27.08
 
 
 var beginnerchart = document.getElementById('beginnerchart').getContext('2d');
@@ -14,6 +14,7 @@ var chart = new Chart(beginnerchart, {
   //the data for our dataset
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Black'],
+
     datasets: [{
       label: 'My First Data',
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
@@ -21,6 +22,7 @@ var chart = new Chart(beginnerchart, {
       data: [12, 19, 3, 5, 2, 3, 10],
       borderWidth: 10
     }]
+
   },
   options: {
     scales: {
@@ -36,4 +38,6 @@ var chart = new Chart(beginnerchart, {
 // chart > data > dataset[0] >label
 
 var abc = chart.data.datasets[0].label;
+const borderSize = chart.data.datasets[0].borderWidth;
 console.log(abc);
+console.log(borderSize);
