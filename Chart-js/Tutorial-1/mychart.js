@@ -1,4 +1,4 @@
-//stop at 27.08
+//stop at 31.42
 
 
 const beginnerchart = document.getElementById('beginnerchart').getContext('2d');
