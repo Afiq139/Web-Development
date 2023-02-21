@@ -81,7 +81,9 @@ console.log(abc);
 console.log(borderSize);
 console.log(bordercolors);
 console.log(bordergreen);
+
 console.log(colorPurple);
 console.log(colorBlue);
 console.log(number19);
-console.log(colorGrey)
+
+console.log(colorGrey);
