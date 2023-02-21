@@ -16,12 +16,22 @@ const chart = new Chart(beginnerchart, {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Black'],
 
     datasets: [{
-      label: 'My First Data',
+      label: 'My First Dataset',
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
       borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
       data: [12, 19, 3, 5, 2, 3, 10],
       borderWidth: 10
-    }]
+    },
+
+    {label: 'My Second Dataset',
+    backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
+    borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
+    data: [12, 19, 3, 5, 2, 3, 10],
+    borderWidth: 10
+    },
+  
+  
+  ]
 
   },
   options: {
