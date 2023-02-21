@@ -6,11 +6,18 @@ const beginnerchart = document.getElementById('beginnerchart').getContext('2d');
       
 const legendDisplay = false;
 console.log(legendDisplay);
+//not working - legend, check back
+
+// chart type
+const typeChart = 'doughnut';
+
+const data1 = [33, 21, 25, 21, 34, 10, 5];
 
 const chart = new Chart(beginnerchart, {
 
   // The type of chart we want to create
-  type: 'doughnut', 
+  //type: 'bar', 
+  type: typeChart,
   //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
 
 
@@ -22,7 +29,8 @@ const chart = new Chart(beginnerchart, {
       {label: 'First Dataset',
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
       borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
-      data: [12, 19, 3, 5, 2, 3, 10],
+      //data: [12, 19, 3, 5, 2, 3, 10],
+      data: data1,
       borderWidth: 1
     },
 
