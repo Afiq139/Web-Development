@@ -76,6 +76,9 @@ const number19 = chart.data.datasets[0].data[1];
 //2nd dataset label
 //missing or broken
 const colorGrey = chart.data.datasets[1].backgroundColor[1];
+const secondDataSet = chart.data.datasets[1].label;
+const missingcolor1 = chart.data.datasets[2].backgroundColor[0];
+const missingcolor2 = chart.data.datasets[2].borderColor[0];
 
 console.log(abc);
 console.log(borderSize);
@@ -87,3 +90,6 @@ console.log(colorBlue);
 console.log(number19);
 
 console.log(colorGrey);
+console.log(secondDataSet);
+console.log(missingcolor1);
+console.log(missingcolor2);
