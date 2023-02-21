@@ -24,8 +24,8 @@ const chart = new Chart(beginnerchart, {
     },
 
     {label: 'My Second Dataset',
-    backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
-    borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
+    backgroundColor: ['pink', 'grey', 'violet', 'brown'],
+    borderColor: ['orange', 'cyan', 'lightblue', 'bloodorange'],
     data: [12, 19, 3, 5, 2, 3, 10],
     borderWidth: 10
     },
