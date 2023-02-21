@@ -31,7 +31,7 @@ const chart = new Chart(beginnerchart, {
     },
 
     {label: 'Third Dataset',
-    backgroundColor: ['marine', 'lightgreen', 'greenblue', 'gold'],
+    backgroundColor: ['marineblue', 'lightgreen', 'greenblue', 'gold'],
     borderColor: ['applegreen', 'cornflowerblue', 'lightblue', 'bloodorange'],
     data: [8, 9, 11, 13, 15, 21, 33],
     borderWidth: 5
