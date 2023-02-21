@@ -72,9 +72,10 @@ const colorPurple = chart.data.labels[4];
 const colorBlue = chart.data.datasets[0].borderColor[1];
 const number19 = chart.data.datasets[0].data[1];
 
-//purple
+//Accessing 2nd dataset, grey
 //2nd dataset label
 //missing or broken
+const colorGrey = chart.data.datasets[1].backgroundColor[1];
 
 console.log(abc);
 console.log(borderSize);
@@ -83,3 +84,4 @@ console.log(bordergreen);
 console.log(colorPurple);
 console.log(colorBlue);
 console.log(number19);
+console.log(colorGrey)
