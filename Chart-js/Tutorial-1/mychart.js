@@ -41,7 +41,7 @@ const chart = new Chart(beginnerchart, {
 //borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black']
 //borderColor: ['0', '1', '2', '3', '4', '5', '6']
 
-//1. extract in console.log April
+//1. extract in console.log for labels
 //2. blue
 //3. number 15 from data
 
