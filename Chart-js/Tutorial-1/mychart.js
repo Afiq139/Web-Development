@@ -41,16 +41,24 @@ const chart = new Chart(beginnerchart, {
 //borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black']
 //borderColor: ['0', '1', '2', '3', '4', '5', '6']
 
-//1. extract in console.log for labels
-//2. blue
-//3. number 15 from data
+
 
 const abc = chart.data.datasets[0].label;
 const borderSize = chart.data.datasets[0].borderWidth;
 const bordercolors = chart.data.datasets[0].borderColor;
 const bordergreen = chart.data.datasets[0].borderColor[3];
 
+//1. extract in console.log for labels
+//2. extract border color blue
+//3. number 19 from data
+const colorPurple = chart.data.labels[4];
+const colorBlue = chart.data.datasets[0].borderColor[1];
+const number19 = chart.data.datasets[0].data[1];
+
 console.log(abc);
 console.log(borderSize);
 console.log(bordercolors);
 console.log(bordergreen);
+console.log(colorPurple);
+console.log(colorBlue);
+console.log(number19);
