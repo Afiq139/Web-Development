@@ -23,21 +23,21 @@ const chart = new Chart(beginnerchart, {
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
       borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
       data: [12, 19, 3, 5, 2, 3, 10],
-      borderWidth: 7
+      borderWidth: 1
     },
 
     {label: 'Second Dataset',
     backgroundColor: ['pink', 'grey', 'violet', 'brown'],
     borderColor: ['orange', 'cyan', 'lightblue', 'bloodorange'],
     data: [15, 10, 7, 5, 3, 2, 1],
-    borderWidth: 5
+    borderWidth: 1
     },
 
     {label: 'Third Dataset',
     backgroundColor: ['marineblue', 'lightgreen', 'greenblue', 'gold'],
     borderColor: ['applegreen', 'cornflowerblue', 'lightblue', 'bloodorange'],
     data: [8, 9, 11, 13, 15, 21, 33],
-    borderWidth: 5
+    borderWidth: 1
     },
   
   
