@@ -15,15 +15,15 @@ const chart = new Chart(beginnerchart, {
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Black'],
 
-    datasets: [{
-      label: 'My First Dataset',
+    datasets: [
+      {label: 'First Dataset',
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
       borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
       data: [12, 19, 3, 5, 2, 3, 10],
       borderWidth: 10
     },
 
-    {label: 'My Second Dataset',
+    {label: 'Second Dataset',
     backgroundColor: ['pink', 'grey', 'violet', 'brown'],
     borderColor: ['orange', 'cyan', 'lightblue', 'bloodorange'],
     data: [15, 10, 7, 5, 3, 2, 1],
