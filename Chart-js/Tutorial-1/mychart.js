@@ -4,6 +4,9 @@
 const beginnerchart = document.getElementById('beginnerchart').getContext('2d');
 // var ctx = document.getElementById('beginnerchart').getContext('2d');
       
+const legendDisplay = false;
+console.log(legendDisplay);
+
 const chart = new Chart(beginnerchart, {
 
   // The type of chart we want to create
@@ -42,11 +45,19 @@ const chart = new Chart(beginnerchart, {
 
   },
   options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
+
+    legend: {
+      //display:false
+      //The doughnut, pie, and polar area charts override the legend defaults. To change the overrides for those chart types, the options are defined in Chart.overrides[type].plugins.legend.
+
+      display: legendDisplay
+    },
+
+    // scales: {
+    //   y: {
+    //     beginAtZero: true
+    //   }
+    // }
   }
 });
 
@@ -83,6 +94,10 @@ const missingcolor2 = chart.data.datasets[2].borderColor[0];
 //chart type
 const chartType = chart.config.type;
 
+//hide legend
+//const legendDisplay = chart.overrides[type].plugins.legend;
+//const legendDisplay = chart.options.legend.display;
+
 console.log(abc);
 console.log(borderSize);
 console.log(bordercolors);
@@ -98,3 +113,5 @@ console.log(missingcolor1);
 console.log(missingcolor2);
 
 console.log(chartType);
+
+//console.log(legendDisplay);
