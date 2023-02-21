@@ -7,7 +7,7 @@ const beginnerchart = document.getElementById('beginnerchart').getContext('2d');
 const chart = new Chart(beginnerchart, {
 
   // The type of chart we want to create
-  type: 'bar', 
+  type: 'doughnut', 
   //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
 
 
