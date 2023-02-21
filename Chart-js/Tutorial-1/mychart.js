@@ -12,6 +12,8 @@ console.log(legendDisplay);
 const typeChart = 'doughnut';
 
 const data1 = [33, 21, 25, 21, 34, 10, 5];
+const data2 =  [15, 10, 7, 5, 3, 2, 1];
+const data3 = [8, 9, 11, 13, 15, 21, 33];
 
 const chart = new Chart(beginnerchart, {
 
@@ -37,14 +39,16 @@ const chart = new Chart(beginnerchart, {
     {label: 'Second Dataset',
     backgroundColor: ['pink', 'grey', 'violet', 'brown'],
     borderColor: ['orange', 'cyan', 'lightblue', 'bloodorange'],
-    data: [15, 10, 7, 5, 3, 2, 1],
+    //data: [15, 10, 7, 5, 3, 2, 1],
+    data: data2,
     borderWidth: 1
     },
 
     {label: 'Third Dataset',
     backgroundColor: ['marineblue', 'lightgreen', 'greenblue', 'gold'],
     borderColor: ['applegreen', 'cornflowerblue', 'lightblue', 'bloodorange'],
-    data: [8, 9, 11, 13, 15, 21, 33],
+    //data: [8, 9, 11, 13, 15, 21, 33],
+    data: data3,
     borderWidth: 1
     },
   
