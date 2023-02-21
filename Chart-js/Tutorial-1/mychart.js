@@ -41,6 +41,10 @@ const chart = new Chart(beginnerchart, {
 //borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black']
 //borderColor: ['0', '1', '2', '3', '4', '5', '6']
 
+//1. extract in console.log April
+//2. blue
+//3. number 15 from data
+
 const abc = chart.data.datasets[0].label;
 const borderSize = chart.data.datasets[0].borderWidth;
 const bordercolors = chart.data.datasets[0].borderColor;
