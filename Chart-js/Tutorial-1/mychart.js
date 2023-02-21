@@ -7,7 +7,7 @@ const beginnerchart = document.getElementById('beginnerchart').getContext('2d');
 const chart = new Chart(beginnerchart, {
 
   // The type of chart we want to create
-  type: 'bar', 
+  type: 'doughnut', 
   //line, bar, radar, doughnut & Pie, Bubble, Scatter, Area, Mixed and so on
 
 
@@ -20,14 +20,14 @@ const chart = new Chart(beginnerchart, {
       backgroundColor: ['rgb(255, 99, 132)', 'rgba(255, 0, 0, 0.1)', 'gray', '#009900'],
       borderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'black'],
       data: [12, 19, 3, 5, 2, 3, 10],
-      borderWidth: 10
+      borderWidth: 7
     },
 
     {label: 'Second Dataset',
     backgroundColor: ['pink', 'grey', 'violet', 'brown'],
     borderColor: ['orange', 'cyan', 'lightblue', 'bloodorange'],
     data: [15, 10, 7, 5, 3, 2, 1],
-    borderWidth: 1
+    borderWidth: 5
     },
   
   
