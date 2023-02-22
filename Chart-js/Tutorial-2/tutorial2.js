@@ -1,4 +1,4 @@
-
+//https://www.w3schools.com/graphics/canvas_drawing.asp
 //getcontext(2d) --> drawing
 const blankcanvas = document.getElementById('blankcanvas').getContext('2d');
 
