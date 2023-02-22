@@ -1,0 +1,1 @@
+const blankcanvas = document.getElementById('blankcanvas').getContext('2d');
