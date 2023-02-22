@@ -8,6 +8,7 @@ blankcanvas.fillStyle = "#FF0000";
 //second = y-axis -> start from top-left-corner (0 pixels down)
 //third = width -- calculate from up
 //fourth = height
+
 //blankcanvas.fillRect(0, 0, 150, 75);
 
 blankcanvas.fillRect(0, 10, 300, 1);
@@ -17,3 +18,8 @@ blankcanvas.fillRect(0, 40, 300, 1);
 blankcanvas.fillRect(0, 50, 300, 1);
 blankcanvas.fillRect(0, 60, 300, 1);
 
+
+blankcanvas.fillRect(10, 0, 1, 150);
+blankcanvas.fillRect(20, 0, 1, 150);
+blankcanvas.fillRect(30, 0, 1, 150);
+blankcanvas.fillRect(40, 0, 1, 150);
