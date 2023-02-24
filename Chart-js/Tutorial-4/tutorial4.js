@@ -1,4 +1,10 @@
 
+const line = document.getElementById('line');
+const bar = document.getElementById('bar');
+
+
+line.addEventListener('click', changeline);
+bar.addEventListener('click', changebar);
 
 const ctx = document.getElementById('dynamic-chart').getContext('2d');
 const mychart = new Chart(ctx, {
@@ -38,3 +44,20 @@ const mychart = new Chart(ctx, {
     }
   }
 });
+
+function changeline(){
+
+  const updatetype = 'line';
+  mychart.config.type = updatetype;
+  mychart.update();
+  //console.log(mychart.config.type);
+  // console.log('changeline function')
+};
+
+function changebar(){
+  const updatetype1 = 'bar';
+  mychart.config.type = updatetype1;
+  mychart.update();
+  //console.log(mychart.type); //undefined
+  // console.log('changebar function')
+};
