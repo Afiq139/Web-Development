@@ -37,10 +37,13 @@ const mychart = new Chart(ctx, {
     }]
   },
   options: {
+
+    indexAxis: 'y',  //y-axis
+     
     scales: {
       y: {
         beginAtZero: true
-      }
+      },
     }
   }
 });
