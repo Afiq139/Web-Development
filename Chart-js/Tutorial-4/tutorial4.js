@@ -38,7 +38,7 @@ const mychart = new Chart(ctx, {
   },
   options: {
 
-    indexAxis: 'y',  //y-axis
+    indexAxis: 'x',  //y-axis
      
     scales: {
       y: {
