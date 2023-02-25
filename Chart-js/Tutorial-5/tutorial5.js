@@ -31,7 +31,6 @@ const mychart = new Chart(ctx, {
     }]
   },
   options: {
-
     //indexAxis: 'x', 
      
     scales: {
@@ -43,3 +42,17 @@ const mychart = new Chart(ctx, {
     }
   }
 });
+
+
+const value1 = document.getElementById('value1');
+const value2 = document.getElementById('value2');
+const value3 = document.getElementById('value3');
+const value4 = document.getElementById('value4');
+const value5 = document.getElementById('value5');
+const value6 = document.getElementById('value6');
+
+value1.style.borderColor = 'rgba(255, 99, 132, 0.5)';
+
+Chart.overrides[bar].plugins.legend.dsplay = false;
+
+//stop at 9.08
