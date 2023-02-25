@@ -32,12 +32,14 @@ const mychart = new Chart(ctx, {
   },
   options: {
 
-    indexAxis: 'x', 
+    //indexAxis: 'x', 
      
     scales: {
-      y: {
-        beginAtZero: true
-      },
+      yAxes:[{
+        ticks:{
+          beginAtZero: true
+        }
+      }]
     }
   }
 });
