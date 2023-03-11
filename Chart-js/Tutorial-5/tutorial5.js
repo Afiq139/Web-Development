@@ -24,7 +24,7 @@ const mychart = new Chart(ctx, {
         'rgba(255, 206, 86, 0.8)',
         'rgba(75, 192, 192, 0.9)',
         'rgba(170, 105, 255, 0.6)',
-        'rgba(255, 159, 64, 1)',
+        'rgba(255, 159, 64, 0.8)',
     
       ],
       borderWidth: 1
