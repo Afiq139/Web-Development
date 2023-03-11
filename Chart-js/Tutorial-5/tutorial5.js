@@ -4,11 +4,11 @@ const ctx = document.getElementById('mychart').getContext('2d');
 const mychart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['jan', 'fab', 'mar', 'apr', 'may', 'jun'],
+    labels: ['jan', 'fab', 'mar', 'apr', 'may', 'jun', 'july'],
     datasets: [{
       label: '# of Votes',
     //   data: [12, 19, 3, 5, 2, 3],
-      data: [2, 19, 3, 5, 2, 3],
+      data: [2, 19, 3, 5, 2, 3, 5],
       backgroundColor: [
         'rgba(255, 99, 132, 0.6)',
         'rgba(54, 156, 235, 0.9)',
@@ -16,6 +16,7 @@ const mychart = new Chart(ctx, {
         'rgba(75, 192, 192, 0.7)',
         'rgba(153, 102, 255, 0.6)',
         'rgba(255, 159, 64, 0.4)',
+        'rgba(193, 159, 64, 0.4)',
     
       ],
       borderColor: [
@@ -25,6 +26,7 @@ const mychart = new Chart(ctx, {
         'rgba(75, 192, 192, 0.9)',
         'rgba(170, 105, 255, 0.6)',
         'rgba(255, 159, 64, 0.8)',
+        'rgba(235, 159, 64, 0.4)',
     
       ],
       borderWidth: 1
